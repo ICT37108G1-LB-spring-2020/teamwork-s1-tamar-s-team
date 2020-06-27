@@ -1,0 +1,14 @@
+<app-spinner *ngIf="loading"></app-spinner>
+
+<div class="page-cont">
+    <a *ngFor="let phone of phones" class="phone-row" [routerLink]="['/phone', phone.id]">
+        <div class="phone-img">
+            <img src="{{ phone.imgUrl }}" alt="">
+        </div>
+        <div class="phone-desc">
+            <h3 class="phone-model">{{ phone.model }}</h3>
+            <p class="phone-type">{{ phone.type }}</p>
+        </div>
+        <div class="price">{{ phone.price }} $</div>
+    </a>
+</div>

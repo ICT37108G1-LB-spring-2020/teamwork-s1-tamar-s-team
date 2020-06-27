@@ -1,0 +1,37 @@
+<app-spinner *ngIf="loading"></app-spinner>
+
+<div class="page-cont">
+    <div class="add-phone">
+        <a [routerLink]="['add']" class="btn">Add new phone</a>
+    </div>
+    
+    <table class="admin-phones-list table">
+        <tr>
+            <th>Image</th>
+            <th>Model</th>
+            <th>Type</th>
+            <th>Price</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tr *ngFor="let phone of phones">
+            <td class="phone-img">
+                <img src="{{ phone.imgUrl }}" alt="">
+            </td>
+            <td>{{ phone.model }}</td>
+            <td>{{ phone.type }}</td>
+            <td>{{ phone.price }} $</td>
+            <td class="edit-phone">
+                <a [routerLink]="['edit', phone.id]">
+                    <img src="../../assets/img/edit.svg" alt="">
+                </a>
+            </td>
+            <td class="delete-phone">
+                <button (click)="deletePhone(phone.id)">
+                    <img src="../../assets/img/delete.svg" alt="">
+                </button>
+            </td>
+        </tr>
+    </table>
+</div>
+

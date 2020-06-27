@@ -1,0 +1,23 @@
+<app-spinner *ngIf="loading"></app-spinner>
+
+<div class="phone-cont page-cont">
+    <div class="phone-img">
+        <img src="{{ phone.imgUrl }}" alt="">
+    </div>
+
+    <table class="phone-desc">
+        <tr>
+            <th>Model:</th>
+            <td>{{ phone.model}}</td>
+        </tr>
+        <tr>
+            <th>Type:</th>
+            <td>{{ phone.type}}</td>
+        </tr>
+        <tr>
+            <th>Price:</th>
+            <td>{{ phone.price}} $</td>
+        </tr>
+    </table>
+</div>
+

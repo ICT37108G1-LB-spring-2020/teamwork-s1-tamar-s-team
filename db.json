@@ -1,0 +1,25 @@
+{
+  "phones": [
+    {
+      "model": "iPhone 11 Pro Max",
+      "type": "Touch screen",
+      "price": "549",
+      "imgUrl": "https://www.att.com/catalog/en/idse/Apple/Apple%20iPhone%2011%20Pro%20Max/Silver-hero-zoom.png",
+      "id": 3
+    },
+    {
+      "model": "Nokia Vs 89",
+      "type": "Non-touch",
+      "price": "345",
+      "imgUrl": "https://monoblok.com.ua/image/cache/catalog/Nokia/Nokia%20Vertice%20VS%2089/Nokia%20Vertice%20VS%2089%20white_1-800x600.jpg",
+      "id": 4
+    },
+    {
+      "model": "BlackBerry Priv",
+      "type": "Touch screen + qwerty",
+      "price": "465",
+      "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/61tp2noCMJL._SX679_.jpg",
+      "id": 5
+    }
+  ]
+}
